@@ -23,10 +23,10 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
-			<h1>Scott Klemmer</h1>
+			<h1 id="ScottName">Scott Klemmer</h1>
 			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
 			<p class="facebookLogin">Please login through Facebook
-			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();" id="fbLogin">
 			</fb:login-button>
 			</p>
 		</div>
@@ -51,6 +51,8 @@
 			</div>
 		</div>
 		{{/each}}
+
+		<!-- <a href="#" class="thumbnail" ><img src=result['image'] class="detailsImage"><p>result['title']</p><p>result['date']</p></a> -->
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
